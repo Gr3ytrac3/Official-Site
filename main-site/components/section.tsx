@@ -1,5 +1,5 @@
 import type React from "react"
-import { cn } from "@/lib/utils"
+import { cn } from "/home/gr3ytrac3/Desktop/website/Official-Site/main-site/lib/utils"
 
 export function Section({
   title,
