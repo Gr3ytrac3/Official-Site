@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
-import { Section } from "@/components/section"
-import { posts } from "@/lib/content"
+import { Section } from "/home/gr3ytrac3/Desktop/website/Official-Site/main-site/components/section"
+import { posts } from "/home/gr3ytrac3/Desktop/website/Official-Site/main-site/lib/content"
 
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = posts.find((p) => p.slug === params.slug)

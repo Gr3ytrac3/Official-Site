@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 import React from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "/home/gr3ytrac3/Desktop/website/Official-Site/main-site/components/ui/button"
 import { Menu } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "/home/gr3ytrac3/Desktop/website/Official-Site/main-site/lib/utils"
 import { usePathname } from "next/navigation"
 
 const nav = [
