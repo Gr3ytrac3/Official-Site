@@ -8,7 +8,7 @@
  * - Low-opacity noise overlay
  * Respects prefers-reduced-motion (less shifting)
  */
-export function Background() {
+export default function Background() {
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10">
       {/* Base gradient + vignette */}

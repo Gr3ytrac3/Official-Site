@@ -86,5 +86,44 @@
   }
   body {
     @apply bg-background text-foreground;
+    position: relative;
+  }
+  
+  /* Grid Background Implementation */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    pointer-events: none;
+    
+    /* Base gradient + vignette */
+    background: 
+      radial-gradient(1200px 800px at 80% -10%, rgba(0,0,0,0.06), rgba(0,0,0,0) 50%), 
+      radial-gradient(1000px 600px at -10% 90%, rgba(0,0,0,0.04), rgba(0,0,0,0) 50%), 
+      linear-gradient(180deg, hsl(45, 20%, 98%) 0%, hsl(45, 17%, 96%) 60%, hsl(45, 15%, 95%) 100%);
+  }
+  
+  /* Reading grid (very subtle) */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9;
+    pointer-events: none;
+    opacity: 0.06;
+    
+    background-image: 
+      linear-gradient(to right, #0f0f0f 1px, transparent 1px), 
+      linear-gradient(to bottom, #0f0f0f 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(900px 700px at 50% 30%, black, transparent 70%);
+    -webkit-mask-image: radial-gradient(900px 700px at 50% 30%, black, transparent 70%);
   }
 }
