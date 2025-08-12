@@ -5,7 +5,6 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { PageTransition } from "@/components/page-transition"
 import { ProgressBar } from "@/components/progress-bar"
-import { Background } from "@/components/background"
 
 export default function SiteLayoutClient({ children }: { children: React.ReactNode }) {
   return (
@@ -19,7 +18,6 @@ export default function SiteLayoutClient({ children }: { children: React.ReactNo
       `}</style>
 
       <ProgressBar />
-      <Background />
       <SiteHeader />
       <main role="main">
         <PageTransition>{children}</PageTransition>
