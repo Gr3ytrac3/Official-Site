@@ -20,7 +20,7 @@ export function SiteFooter() {
             </li>
             <li>
               <Link className="hover:text-neutral-900" href="/advisories">
-                Advisories
+                Advisorises
               </Link>
             </li>
             <li>
