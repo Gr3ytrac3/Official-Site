@@ -30,7 +30,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200/60 bg-white/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
         <Link href="/" className="flex items-baseline gap-2">
-          <span className="text-lg font-semibold tracking-tight text-neutral-900">RedKernel</span>
+          <span className="text-lg font-semibold tracking-tight text-neutral-900">CyberdevHq</span>
           <span className="hidden text-sm text-neutral-500 sm:inline">Offensive Kernel Security</span>
         </Link>
 

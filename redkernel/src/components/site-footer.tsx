@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-neutral-200/60 bg-white/70">
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 md:grid-cols-4">
         <div className="space-y-2">
-          <div className="text-base font-semibold text-neutral-900">RedKernel</div>
+          <div className="text-base font-semibold text-neutral-900">CyberdevHq</div>
           <p className="text-sm text-neutral-600">
             Linux kernel exploitation, syscall manipulation, eBPF telemetry & evasion, and LSM bypass research.
           </p>
@@ -64,7 +64,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-neutral-200/70">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 text-sm text-neutral-600">
-          <span>© {new Date().getFullYear()} RedKernel</span>
+          <span>© {new Date().getFullYear()} CyberdevHq</span>
           <span>Focused. Responsible. Evidence-driven.</span>
         </div>
       </div>
