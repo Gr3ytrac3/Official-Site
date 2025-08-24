@@ -122,7 +122,7 @@
     background-image: 
       linear-gradient(to right, #0f0f0f 1px, transparent 1px), 
       linear-gradient(to bottom, #0f0f0f 1px, transparent 1px);
-    background-size: 48px 48px;
+    background-size: 52px 52px;
     mask-image: radial-gradient(900px 700px at 50% 30%, black, transparent 70%);
     -webkit-mask-image: radial-gradient(900px 700px at 50% 30%, black, transparent 70%);
   }
