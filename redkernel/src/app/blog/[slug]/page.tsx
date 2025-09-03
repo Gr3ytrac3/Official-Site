@@ -16,7 +16,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <span>•</span>
             <span>{post.readingTime}</span>
           </div>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="mt-2 flex flex-wrap gap-2 text-[#e5e5e5]">
             {post.tags.map((t) => (
               <span
                 key={t}

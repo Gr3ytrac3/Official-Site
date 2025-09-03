@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function DisclosurePage() {
   return (
     <Section title="Responsible Disclosure" subtitle="Secure channels and expectations.">
-      <div className="prose prose-neutral max-w-none prose-p:my-3">
+      <div className="prose prose-neutral max-w-none prose-p:my-3 text-[#e5e5e5]">
         <p>
           I operate with responsible disclosure to strengthen the ecosystem. Vendors receive sufficient detail to
           reproduce and validate issues.
