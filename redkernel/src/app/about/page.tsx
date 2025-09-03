@@ -3,7 +3,7 @@ import { Section } from "@/components/section"
 export default function AboutPage() {
   return (
     <Section title="About" subtitle="Who I am and how I work.">
-      <div className="prose prose-neutral max-w-none prose-p:my-3 prose-li:my-1">
+      <div className="prose prose-neutral max-w-none prose-p:my-3 prose-li:my-1 text-[#e5e5e5]">
         <p>
           I operate in the deepest layers of system architecture — the Linux kernel. My work focuses on exploitation,
           syscall manipulation, eBPF telemetry & evasion, and LSM bypass research in support of offensive security and

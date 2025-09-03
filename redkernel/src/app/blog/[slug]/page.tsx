@@ -8,10 +8,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <Section>
-      <article className="mx-auto max-w-3xl">
+      <article className="mx-auto max-w-3xl text-[#e5e5e5]">
         <header className="mb-4">
-          <h1 className="text-2xl font-semibold tracking-tight text-neutral-900 md:text-3xl">{post.title}</h1>
-          <div className="mt-2 flex items-center gap-3 text-xs text-neutral-600">
+          <h1 className="text-2xl font-semibold tracking-tight text-neutral-900 md:text-3xl text-[#e5e5e5]">{post.title}</h1>
+          <div className="mt-2 flex items-center gap-3 text-xs text-neutral-600 text-[#e5e5e5]">
             <span>{new Date(post.date).toLocaleDateString()}</span>
             <span>•</span>
             <span>{post.readingTime}</span>
