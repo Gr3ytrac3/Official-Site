@@ -1,9 +1,17 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Section } from "@/components/section"
-import { hero, focus, research as researchItems } from "@/lib/content"
-import Background from '@/components/background';
+"use client";
+
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Section } from "@/components/section";
+import { hero, focus, research as researchItems } from "@/lib/content";
+import Background from "@/components/background";
 import { section } from "framer-motion/client";
+import dynamic from "next/dynamic";
+
+const ReactTyped = dynamic(
+  () => import("react-typed").then(mod => mod.ReactTyped),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -13,9 +21,25 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4 text-[#e5e5e5]">Kernel Security Engineer • Exploit Dev • Red Team Ops </h1>
-        <p className="text-xl mb-8 text-[#e5e5e5]">CVE & zero-day hunter — specializing in kernel internals, exploit engineering, and offensive research.</p> {/* Placeholder from Framer */}
-        <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Access Kernel Insights</button>
+        <h1 className="text-4xl font-bold mb-4 text-[#e5e5e5]">
+          Kernel Security Engineer • Exploit Dev • Red Team Ops
+        </h1>
+
+        <p className="text-xl mb-8 text-[#e5e5e5]">
+          <ReactTyped
+            strings={[
+              "CVE & zero-day hunter",
+              "Specializing in kernel internals",
+              "Exploit engineering & shellcode dev",
+              "Red Team operations at ring-0",
+              "Offensive research and advisories",
+            ]}
+            typeSpeed={50}
+            backSpeed={30}
+            backDelay={1500}
+            loop
+          />
+        </p>        <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Access Kernel Insights</button>
       </section>
 
       {/* Latest Research/Advisories Grid (repurposed from Latest Templates) */}
