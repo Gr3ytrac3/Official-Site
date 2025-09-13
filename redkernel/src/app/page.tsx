@@ -13,9 +13,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4 text-[#e5e5e5]">Kernel Security Engineer - Offensive Security Researcher - Exploit Developer - Red Teamer </h1>
-        <p className="text-xl mb-8 text-[#e5e5e5]">Linux kernel exploitation, syscall manipulation, eBPF telemetry & evasion, and LSM bypass research.</p> {/* Placeholder from Framer */}
-        <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Launch Your Research in Minutes</button>
+        <h1 className="text-4xl font-bold mb-4 text-[#e5e5e5]">Kernel Security Engineer • Exploit Dev • Red Team Ops </h1>
+        <p className="text-xl mb-8 text-[#e5e5e5]">CVE & zero-day hunter — specializing in kernel internals, exploit engineering, and offensive research.</p> {/* Placeholder from Framer */}
+        <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Access Kernel Insights</button>
       </section>
 
       {/* Latest Research/Advisories Grid (repurposed from Latest Templates) */}
