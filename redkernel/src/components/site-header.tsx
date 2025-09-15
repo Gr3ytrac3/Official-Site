@@ -88,15 +88,6 @@ export function SiteHeader() {
           >
             Disclosure
           </Link>
-          <Link
-            href="/contact"
-            className={cn(
-              "text-sm font-medium text-neutral-700 hover:text-neutral-900",
-              pathname === "/contact" && "text-neutral-900"
-            )}
-          >
-            Contact
-          </Link>
           <Button asChild variant="default" className="ml-4">
             <Link href="/contact">Get in Touch</Link>
           </Button>
